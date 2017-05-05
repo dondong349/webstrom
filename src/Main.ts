@@ -50,6 +50,8 @@ class Main extends eui.UILayer {
         RES.loadConfig("resource/default.res.json", "resource/");
 
         hc.LayerMgr.getIns().init(this);
+        lemon.StageUtil.stage = this.stage;
+        lemon.StageUtil.init();
     }
     /**
      * 配置文件加载完成,开始预加载皮肤主题资源和preload资源组。
